@@ -16,23 +16,22 @@
             color: #1e1e1e;
         }
         .header {
-            height: auto;
+            height: 100vh;
             position: relative;
             overflow: hidden;
-            min-height: 300px;
-        }
-        .header-images {
-            display: flex;
-            flex-direction: column;
-            width: 100%;
-            height: auto;
-        }
-        .header-image {
-            flex: 1;
+            background-image: url('IMG_3776.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 50vh;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* 添加暗色遮罩以增加文字可讀性 */
         }
         .header-content {
             position: absolute;
@@ -140,11 +139,6 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-images">
-            <div class="header-image" style="background-image: url('https://travel2ger.com.tw/material-alias/Asia/Japan/Kumano%20Kodo/%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93-990x.jpg');"></div>
-            <div class="header-image" style="background-image: url('https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.6435-9/43754210_544222316025703_6396775006189125632_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=f3OAtd9IpY4Q7kNvgHOBc6i&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=Ac9j_LPVvxreoE2ajSGMwRa&oh=00_AYCKrUFI-3cE4ad7MYxVXWFUckY3i0NfybJ7d3utVejdRQ&oe=6704B1A1');"></div>
-            <div class="header-image" style="background-image: url('https://www.ri-meng.com/wp-content/uploads/2021/06/%E9%82%A3%E6%99%BA%E3%81%AE%E6%BB%9D%EF%BC%93-773x1030-1.jpg');"></div>
-        </div>
         <div class="header-content">
             <h1>陳又寧的和歌山三重縣夢幻之旅</h1>
             <p class="subtitle">從關西到伊勢，探索日本的神秘與美麗</p>
@@ -199,7 +193,7 @@
             <h2><i class="fas fa-mountain icon"></i>第二天：高野山靈性之旅</h2>
             <div class="attractions">
                 <div class="attraction">
-                    <img src="https://visitwakayama.jp/lsc/upfile/spot/0000/0524/524_1_l.jpg" alt="高野山">
+                    <img src="https://visitwakayama.jp/lsc/upfile/spot/0000/0524/524_1_l.jpg" alt="金剛峯寺">
                     <div class="attraction-content">
                         <h3>金剛峯寺</h3>
                         <p>參觀高野山的中心寺院，欣賞其宏偉的建築和豐富的歷史。這裡是弘法大師空海創立真言宗的發源地。</p>
