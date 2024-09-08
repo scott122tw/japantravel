@@ -31,7 +31,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.4); /* 添加暗色遮罩以增加文字可讀性 */
+            background: rgba(0, 0, 0, 0.4); /* 添加色遮罩以增加文字可讀性 */
         }
         .header-content {
             position: absolute;
@@ -133,6 +133,51 @@
         @media (max-width: 768px) {
             .attractions {
                 grid-template-columns: 1fr;
+            }
+        }
+        .guide-info {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 50px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .guide-info h2 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        .guide-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .guide-photo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .guide-details h3 {
+            color: #3d84a8;
+            margin-top: 0;
+        }
+
+        .guide-details p {
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .guide-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .guide-photo {
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -264,7 +309,7 @@
                     <img src="https://www.kankomie.or.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVlFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--74ed7e3e91aeae3aa7d6abed01d5e04c22b14ab7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFvUURNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--ef4af471d0804d4a7b7d74cb943d03ada1b9519d/1821_2_org.jpg" alt="托福橫丁">
                     <div class="attraction-content">
                         <h3>托福橫丁</h3>
-                        <p>漫步在這條充滿江戶時代風情的街道上，品嚐當地美食如伊勢烏龍麵和松阪牛串，購買特色紀念品。</p>
+                        <p>漫步在這條充滿江戶時代風情的街道上，品嚐道地美食如伊勢烏龍麵和松阪牛串，購買特色紀念品。</p>
                     </div>
                 </div>
             </div>
@@ -297,8 +342,22 @@
             </div>
         </section>
 
-        <a href="#" class="cta-button">立即預訂您的和歌山三重和和歌山之旅！</a>
+        <a href="#" class="cta-button">僅限兩位參加！！！</a>
     </main>
+
+    <section class="guide-info">
+        <h2><i class="fas fa-user-tie icon"></i>您的”不“專業導遊</h2>
+        <div class="guide-content">
+            <img src="guide-photo1.jpg" alt="導遊照片" class="guide-photo">
+            <div class="guide-details">
+                <h3>陳阿建</h3>
+                <p><strong>專業領域：</strong> 睡覺、打電動、保險</p>
+                <p><strong>語言：</strong> 中文、一點日語和英語</p>
+                <p><strong>經驗：</strong> 日本自由行超過10次吧</p>
+                <p>陳阿建第一次去日本三重，只是想去爽，卻莫名其妙要當導遊還要設計網頁</p>
+            </div>
+        </div>
+    </section>
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
