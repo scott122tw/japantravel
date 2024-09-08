@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳又寧的和歌山三重縣夢幻之旅</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap');
+        
+        body, html {
+            font-family: 'Noto Sans TC', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f5f9;
+            color: #1e1e1e;
+        }
+        .header {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-images {
+            display: flex;
+            flex-direction: row; /* 確保水平排列 */
+            width: 100%;
+            height: 100%;
+        }
+        .header-image {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; /* 防止圖片重複 */
+        }
+        .header-content {
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+            z-index: 1;
+            width: 80%;
+            padding: 20px;
+        }
+        .cta-button-container {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #ff6b6b;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #ff8e8e;
+        }
+        h1 {
+            font-family: 'Noto Serif JP', serif;
+            font-size: 4em;
+            margin-bottom: 10px;  
+        }
+        .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 10px;  
+        }
+        .content {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .day {
+            background-color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 50px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .day::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background-color: #ff6b6b;
+        }
+        .day h2 {
+            font-family: 'Noto Serif JP', serif;
+            color: #ff6b6b;
+            margin-top: 0;
+        }
+        .attractions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        .attraction {
+            background-color: #f9f7f7;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .attraction:hover {
+            transform: translateY(-5px);
+        }
+        .attraction img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .attraction-content {
+            padding: 20px;
+        }
+        .attraction h3 {
+            color: #3d84a8;
+            margin-top: 0;
+        }
+        .icon {
+            margin-right: 10px;
+        }
+        @media (max-width: 768px) {
+            .attractions {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-images">
+            <div class="header-image" style="background-image: url('https://travel2ger.com.tw/material-alias/Asia/Japan/Kumano%20Kodo/%E7%86%8A%E9%87%8E%E5%8F%A4%E9%81%93-990x.jpg');"></div>
+            <div class="header-image" style="background-image: url('https://scontent.ftpe7-2.fna.fbcdn.net/v/t1.6435-9/43754210_544222316025703_6396775006189125632_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=13d280&_nc_ohc=f3OAtd9IpY4Q7kNvgHOBc6i&_nc_ht=scontent.ftpe7-2.fna&_nc_gid=Ac9j_LPVvxreoE2ajSGMwRa&oh=00_AYCKrUFI-3cE4ad7MYxVXWFUckY3i0NfybJ7d3utVejdRQ&oe=6704B1A1');"></div>
+            <div class="header-image" style="background-image: url('https://www.ri-meng.com/wp-content/uploads/2021/06/%E9%82%A3%E6%99%BA%E3%81%AE%E6%BB%9D%EF%BC%93-773x1030-1.jpg');"></div>
+        </div>
+        <div class="header-content">
+            <h1>陳又寧的和歌山三重縣夢幻之旅</h1>
+            <p class="subtitle">從關西到伊勢，探索日本的神秘與美麗</p>
+        </div>
+        <div class="cta-button-container">
+            <a href="#itinerary" class="cta-button">開始探索</a>
+        </div>
+    </header>
+
+    <main class="content" id="itinerary">
+        <section class="day">
+            <h2><i class="fas fa-plane-arrival icon"></i>航班信息</h2>
+            <div class="flight-info">
+                <p><strong>抵達機場：</strong>關西國際機場</p>
+                <p><strong>注意事項：</strong>
+                    <ul>
+                        <li>從關西機場到和歌山市可以乘坐機場巴士，約1小時車程。</li>
+                        <li>建議在機場租車，以便靈活安排後續行程。</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+
+        <section class="day">
+            <h2><i class="fas fa-city icon"></i>第一天：和歌山市文化之旅</h2>
+            <div class="attractions">
+                <div class="attraction">
+                    <img src="https://ak-d.tripcdn.com/images/0107412000eygyb6zD884_C_1200_800_Q70.jpg?proc=source%2ftrip" alt="和歌山城">
+                    <div class="attraction-content">
+                        <h3>和歌山城</h3>
+                        <p>參觀這座美麗的日本城堡，了解其豐富的歷史。從天守閣俯瞰和歌山市的美麗景色。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://ak-d.tripcdn.com/images/1mi6y224x8vdoh2fl7958_W_640_0_R5_Q80.jpg?proc=source/trip" alt="和歌山市購物區">
+                    <div class="attraction-content">
+                        <h3>和歌山市購物區</h3>
+                        <p>在和歌山市中心享受購物樂趣，購買當地特產和紀念品。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://zh-tw.skyticket.com/guide/wp-content/uploads/2020/10/pixta_60724035_M.jpg" alt="和歌山電鐵貓站長">
+                    <div class="attraction-content">
+                        <h3>和歌山電鐵貓站長</h3>
+                        <p>體驗獨特的和歌山電鐵，拜訪著名的貓站長，感受日本特色的鐵道文化。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="day">
+            <h2><i class="fas fa-mountain icon"></i>第二天：高野山靈性之旅</h2>
+            <div class="attractions">
+                <div class="attraction">
+                    <img src="https://visitwakayama.jp/lsc/upfile/spot/0000/0524/524_1_l.jpg" alt="高野山">
+                    <div class="attraction-content">
+                        <h3>金剛峯寺</h3>
+                        <p>參觀高野山的中心寺院，欣賞其宏偉的建築和豐富的歷史。這裡是弘法大師空海創立真言宗的發源地。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://mookblog-aws.hmgcdn.com/public/article/2019/atl_20200413134442_832.jpg" alt="奧之院">
+                    <div class="attraction-content">
+                        <h3>奧之院</h3>
+                        <p>探訪日本最大的墓地，感受其神秘而莊嚴的氛圍。這裡是弘法大師空海的最終安息之地。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://visitwakayama.jp/lsc/upfile/spot/0000/0481/481_1_l.jpg" alt="根本大塔">
+                    <div class="attraction-content">
+                        <h3>根本大塔</h3>
+                        <p>參觀這座高達48.5米的宏偉塔樓，它是高野山的象徵之一。塔內供奉著真言密教的主尊大日如來。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="day">
+            <h2><i class="fas fa-hiking icon"></i>第三天：熊野古道與那智瀑布之旅</h2>
+            <div class="attractions">
+                <div class="attraction">
+                    <img src="https://rimage.gnst.jp/livejapan.com/public/img/spot/lj/00/09/lj0009367/lj0009367_5cab1ec23acf1_main.jpg?20240815082240&q=80&rw=616" alt="熊野古道">
+                    <div class="attraction-content">
+                        <h3>熊野古道</h3>
+                        <p>體驗日本著名的朝聖之路，欣賞沿途的自然美景和歷史遺跡。這條古道連接了熊野三山，是日本重要的文化遺產。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQwi9x64gpAYjxJOXTCYC1cV2OIKlYnoeg2mK0GSLFlCuzB_OepRn4oOITmhjBU8EzkxZtQ7l3nB0BVn4LB9_B06gOtKqT0ZQcnh4HH0Zg" alt="那智瀑布">
+                    <div class="attraction-content">
+                        <h3>那智瀑布</h3>
+                        <p>欣賞日本三大瀑布之一的那智瀑布，高133米，氣勢磅礴。附近的青岸渡寺也值得一遊，可以欣賞瀑布與寺廟的絕美組合。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://att-japan.net/wp-content/uploads/2023/06/shirarahama1_R.jpg" alt="南紀白濱">
+                    <div class="attraction-content">
+                        <h3>南紀白濱</h3>
+                        <p>放鬆身心在著名的溫泉勝地，欣賞太平洋的壯麗景色。可以選擇參觀附近的冒險世界主題公園。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="day">
+            <h2><i class="fas fa-torii-gate icon"></i>第四天：神聖伊勢之旅</h2>
+            <div class="attractions">
+                <div class="attraction">
+                    <img src="https://today-obs.line-scdn.net/0hzh-EBFFeJUcQPAz207haECpqJigjUDZEdAp0RFNSe3NqWWVDeA9ocTM8LyA8XGIZfgpjJDY0PnZoDGFGKAho/w1200" alt="伊勢神宮內宮">
+                    <div class="attraction-content">
+                        <h3>伊勢神宮內宮</h3>
+                        <p>參拜日本最重要的神社之一，感受神聖氛圍。內宮供奉著日本皇室的祖先神明天照大御神。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://dm9p0p2npaqik.cloudfront.net/spots/890812/1865537/3742431/2.webp" alt="伊勢神宮外宮">
+                    <div class="attraction-content">
+                        <h3>伊勢神宮外宮</h3>
+                        <p>探訪供奉豐受大神的外宮，了解日本的糧食、衣食住行與產業之神的重要性。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://www.kankomie.or.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaVlFIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--74ed7e3e91aeae3aa7d6abed01d5e04c22b14ab7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBPZ2wzWldKd09oSnlaWE5wZW1WZmRHOWZabWwwV3dkcEFvUURNQT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--ef4af471d0804d4a7b7d74cb943d03ada1b9519d/1821_2_org.jpg" alt="托福橫丁">
+                    <div class="attraction-content">
+                        <h3>托福橫丁</h3>
+                        <p>漫步在這條充滿江戶時代風情的街道上，品嚐當地美食如伊勢烏龍麵和松阪牛串，購買特色紀念品。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="day">
+            <h2><i class="fas fa-water icon"></i>第五天：鳥羽水族館、賢島和伊勢志摩國立公園之旅</h2>
+            <div class="attractions">
+                <div class="attraction">
+                    <img src="https://www.iseshima-kanko.jp/storage/tourism_attractions/1545/responsive_images/ev7Gw1Qph8qjgkfjTdzx9phbAKasWMECXte8tk3O__1764_1176.jpeg" alt="鳥羽水族館">
+                    <div class="attraction-content">
+                        <h3>鳥羽水族館</h3>
+                        <p>欣賞各種海洋生物，特別是珍珠養殖展示。這裡還有精彩的海豚和海獅表演。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://lh5.googleusercontent.com/p/AF1QipPMAf8Lg4sQdqy4y70PiF1Mr0lhd3javv2UGdO9=w1080-h624-n-k-no" alt="賢島">
+                    <div class="attraction-content">
+                        <h3>賢島</h3>
+                        <p>乘坐遊船欣賞英虞灣的美麗景色。可以考慮在此享用新鮮的海鮮料理。</p>
+                    </div>
+                </div>
+                <div class="attraction">
+                    <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSECRCtb4M8EU9KNUp37EJy6iTy9BrXfgc8-3uiBnbOjZ7Ef7n6Q6U720aqfFlqADdcaaOgzljB2zLy2qwMn_MXI23IqyhOItxL7UyfRg" alt="伊勢志摩國立公園">
+                    <div class="attraction-content">
+                        <h3>伊勢志摩國立公園</h3>
+                        <p>欣賞美麗的海岸線和島嶼風光，體驗日本的自然之美。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <a href="#" class="cta-button">立即預訂您的和歌山三重和和歌山之旅！</a>
+    </main>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
